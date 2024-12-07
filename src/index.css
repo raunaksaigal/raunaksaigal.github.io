@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&family=Saira+Stencil+One&family=Ultra&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: anzo;
+  src: url("/assets/file.woff2");
+}
+
+@font-face {
+  font-family: anzo1;
+  src: url("/assets/file1.woff2");
+}
+
+@font-face {
+  font-family: anzo2;
+  src: url("/assets/file2.woff2");
+}
+
+@font-face {
+  font-family: anzo3;
+  src: url("/assets/file3.woff2");
+}
+
+@font-face {
+  font-family: anzo4;
+  src: url("/assets/file4.woff2");
+}
+
+@font-face {
+  font-family: samakaran;
+  src: url("/assets/samakaran.ttf");
+}
+
+#flashlight {
+  --Xpos: 50vw;
+  --Ypos: 50vh;
+}
+#flashlight:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  pointer-events: none;
+  background: radial-gradient(
+    circle 9em at var(--Xpos) var(--Ypos),
+    rgba(0, 0, 0, 0) 10%,
+    rgba(0, 0, 0, 0) 100%,
+    rgba(0, 0, 0, 1)
+  );
+}
+
+.name {
+  transition: "transform 1s ease";
+}
