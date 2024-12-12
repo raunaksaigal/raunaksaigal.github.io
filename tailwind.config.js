@@ -11,6 +11,13 @@ export default {
         "Russo": ["Russo One", "sans-serif"],
         "Ultra": ["Ultra", "serif"],
        },
+       backgroundColor: {
+        "p1" : "#FDFCDC",
+        "p2" : "#FED9B7",
+        "p3" : "#F07167",
+        "p4" : "#00AFB9",
+        "p5" : "#0081A7",
+       }
     },
   },
   plugins: [

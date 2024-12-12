@@ -9,6 +9,11 @@
 }
 
 @font-face {
+  font-family: heavitas;
+  src: url("/assets/Heavitas.ttf");
+}
+
+@font-face {
   font-family: anzo1;
   src: url("/assets/file1.woff2");
 }
@@ -24,6 +29,11 @@
 }
 
 @font-face {
+  font-family: flo;
+  src: url("/assets/floriena.ttf");
+}
+
+@font-face {
   font-family: anzo4;
   src: url("/assets/file4.woff2");
 }
@@ -33,25 +43,55 @@
   src: url("/assets/samakaran.ttf");
 }
 
-#flashlight {
-  --Xpos: 50vw;
-  --Ypos: 50vh;
-}
-#flashlight:before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  pointer-events: none;
-  background: radial-gradient(
-    circle 9em at var(--Xpos) var(--Ypos),
-    rgba(0, 0, 0, 0) 10%,
-    rgba(0, 0, 0, 0) 100%,
-    rgba(0, 0, 0, 1)
-  );
-}
-
 .name {
   transition: "transform 1s ease";
 }
+
+.projectDiv {
+  width: 100vw;
+  height: 90vh;
+  padding-right: 10vw;
+  padding-left: 10vw;
+}
+
+.projContainer {
+  display: flex;
+  /* width: fit-content; */
+  height: 100vh;
+}
+
+.swiper {
+  /* overflow: auto; */
+  width: 50vw;
+  height: 50vh;
+}
+
+* {
+  /* overflow: hidden; */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* body{
+  overflow-x: hidden;
+} */
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #000000;
+  background: #ffffff;
+}
+
+/* .swiper-slide:nth-child(1n) {
+  background-color: rgb(206, 17, 17);
+}
+
+.swiper-slide:nth-child(2n) {
+  background-color: rgb(0, 140, 255);
+} */

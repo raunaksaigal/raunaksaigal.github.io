@@ -41,7 +41,7 @@ const Impact = () => {
                 trigger: '.impact',
                 start: 'top 60%',
                 end: 'top -80%',
-                markers: true,
+                // markers: true,
                 scrub: 0.5,
             }
         })
@@ -49,11 +49,11 @@ const Impact = () => {
     
     
   return (
-    <div>
-        <div className="h-[200vh] w-full font-[anzo3] justify-evenly text-center text-[25rem] md:text-[20rem] leading-[30rem] " >
-            <div className="impact perspective-1000">BACKEND VIRTUOSO</div>
-            <div className="impact perspective-1000"> FRONTEND SEEKER</div>
-            <div className="impact perspective-1000"> ML TRAILBLAZER</div>
+    <div className='impactMain' >
+        <div className="h-[200vh] w-full font-[anzo3] justify-evenly text-center text-[5rem] md:text-[10rem] lg:text-[16rem] leading-[30rem] " >
+            <div className="h-auto impact perspective-1000">BACKEND VIRTUOSO</div>
+            <div className="h-auto impact perspective-1000"> FRONTEND SEEKER</div>
+            <div className="h-auto impact perspective-1000"> ML TRAILBLAZER</div>
 
         </div>
     </div>
