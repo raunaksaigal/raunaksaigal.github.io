@@ -65,17 +65,25 @@ import React, { useEffect, useRef } from 'react'
 import useWindow from './window'
 import { useState } from 'react';
 import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
 
 export default function Scene() {
   const { dimension } = useWindow();
   const canvas = useRef();
   const prevPosition = useRef(null)
   const [c, setc] = useState(0)
-
+  
   useEffect( () => {
     dimension.width > 0 && init();
   }, [dimension])
 
+    useGSAP(()=>{
+      
+    })
+
+
+
+  
   const init = () => {
     // const img = new Image(); // Create new img element
     // img.src = "/assets/mandala.jpg"; // Set source path
@@ -136,6 +144,15 @@ const ctx = canvas.current.getContext("2d");
   const manageMouseMove = (e) => {
     setc(c+1)
     console.log(c)
+    if(c>100){
+      setc(0)
+      console.log("greater")
+    gsap.to(canvas.current,{
+      // translateY:"-100%",
+      ease:"expo.out",
+      opacity:0,
+      duration:4,
+    })}
     const { clientX, clientY, movementX, movementY } = e;
 
     const nbOfCircles = Math.max(Math.abs(movementX), Math.abs(movementY)) / 10;
@@ -165,7 +182,7 @@ const ctx = canvas.current.getContext("2d");
   return (
     <div className='relative w-screen h-full overflow-hidden bg-[#66393900]'>
       {dimension.width == 0 && <div className='w-0 md:w-full z-50 h-full'/>}
-      <canvas className='w-0 md:w-[100vw] ' ref={canvas} onMouseMove={manageMouseMove} onTouchMove={manageMouseMove} height={dimension.height} width={dimension.width}/>
+      <canvas className='w-0 md:w-[100vw] ' ref={canvas} onMouseMove={manageMouseMove} height={dimension.height} width={dimension.width}/>
     </div>
   )
 }

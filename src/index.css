@@ -2,6 +2,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+* {
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+}
 
 @font-face {
   font-family: anzo;
@@ -62,20 +69,13 @@
 
 .swiper {
   /* overflow: auto; */
-  width: 50vw;
-  height: 50vh;
+  width: 70vw;
+  height: 70vh;
 }
 
-* {
-  /* overflow: hidden; */
-  ::-webkit-scrollbar {
-    display: none;
-  }
-}
-
-/* body{
+body {
   overflow-x: hidden;
-} */
+}
 
 .swiper-slide {
   display: flex;
@@ -86,6 +86,7 @@
   font-weight: bold;
   color: #000000;
   background: #ffffff;
+  padding: 10%;
 }
 
 /* .swiper-slide:nth-child(1n) {
