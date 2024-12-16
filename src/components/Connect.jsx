@@ -62,10 +62,14 @@ const animate = () => {
         </div>
         <br />
         <div className="flex justify-around items-center self-center w-[70vw]">
-          <div className=""><img className='w-[6vw]' src="/icons/github.png" alt="" /></div>
-          <div className=""><img className='w-[6vw]' src="/icons/insta.png" alt="" /></div>
-          <div className=""><img className='w-[6vw]' src="/icons/linkedin.png" alt="" /></div>
-          <div className=""><img className='w-[6vw]' src="/icons/x.png" alt="" /></div>
+          
+          
+          
+          
+          <div className=""><a href="https://github.com/raunaksaigal"><img className='w-[6vw]' src="/icons/github.png" alt="" /></a></div>
+          {/* <div className=""><a href=""><img className='w-[6vw]' src="/icons/insta.png" alt="" /></a></div> */}
+          <div className=""><a href="https://www.linkedin.com/in/raunaksaigal/"><img className='w-[6vw]' src="/icons/linkedin.png" alt="" /></a></div>
+          <div className=""><a href="https://x.com/bl4ck_81rd"><img className='w-[6vw]' src="/icons/x.png" alt="" /></a></div>
         </div>
         <img className="absolute top-full -translate-y-full w-[100vw] left-[0px] -z-10" src="/assets/waves.svg" alt="" />
     </div>

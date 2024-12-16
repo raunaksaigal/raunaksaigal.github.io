@@ -28,26 +28,26 @@ const Projects = () => {
         {
             image:"EarlyPredictionAlzheimersAccuracy.png", 
             title:"Early Prediction of Alzheimer's Disease",
-            link:"#",
-            text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus sunt unde ea hic ipsum. Quasi, recusandae doloribus tempora harum ducimus sequi atque facilis, hic vel rem pariatur impedit ipsum voluptatibus."
+            link:"",
+            text:"An ongoing research work to architecture a Deep Learning model Experimenting with different models and even building my own 3D-RNN to make the model learn the patterns"
         },
         {
             image:"circuit_diagram.jpg", 
             title:"Silo Monitoring System",
             link:"https://github.com/raunaksaigal/Silo-Monitoring-System",
-            text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus sunt unde ea hic ipsum. Quasi, recusandae doloribus tempora harum ducimus sequi atque facilis, hic vel rem pariatur impedit ipsum voluptatibus."
+            text:"To monitor the quality and quantity of grains in storage"
         },
         {
             image:"amazonml.png", 
             title:"Amazon ML Challenge",
             link:"https://www.linkedin.com/feed/update/urn:li:activity:7249476827616833537/",
-            text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus sunt unde ea hic ipsum. Quasi, recusandae doloribus tempora harum ducimus sequi atque facilis, hic vel rem pariatur impedit ipsum voluptatibus."
+            text:" Our team secured a rank of 232 among more than 70000 participant.  Based on OCR, we were required to process more than 200k images for text."
         },
         {
             image:"nirmiti2024.jpg", 
             title:"Nirmiti - A Start-Up Conclave",
             link:"https://www.linkedin.com/feed/update/urn:li:activity:7249476827616833537/",
-            text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus sunt unde ea hic ipsum. Quasi, recusandae doloribus tempora harum ducimus sequi atque facilis, hic vel rem pariatur impedit ipsum voluptatibus."
+            text:"Our team consisting of Saikat Bandopadhyay, Debrup Sengupta, Ayaan Ray, Soumita Das, Asmita Chatterjee and me Raunak Saigal as the founding members of our startup Dishastra, we secure First Place with a prize money of 15000 Rs. in Nirmiti Startup Conclave! "
         },
     ]
 
